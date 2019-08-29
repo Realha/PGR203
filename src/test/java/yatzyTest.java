@@ -13,6 +13,13 @@ public class yatzyTest {
         assertEquals(5, score("ONES", new int[] { 1, 1, 1, 1, 1 }));
     }
 
+    @Test
+    void shouldCalculateForTwos() {
+        assertEquals(0, score("TWOS", new int[] { 1, 3, 4, 5, 6}));
+        assertEquals(2, score("TWOS", new int[] { 2, 3, 2, 5, 6}));
+        assertEquals(5, score("TWOS", new int[] { 2, 2, 2, 2, 2}));
+    }
+
     private int score(String ones, int[] ints) {
         int sum = 0;
         for (int i = 0; i < ints.length; i++) {
