@@ -40,8 +40,15 @@ public class yatzyTest {
                     }
                     break;
                 case "TWOS":
-                    if (diceRoll == 2)
+                    if (diceRoll == 2) {
                         score += 2;
+                    }
+                    break;
+                case "THREES":
+                    if (diceRoll == 3) {
+                        score += 3;
+                    }
+                    break;
             }
         }
         return score;
